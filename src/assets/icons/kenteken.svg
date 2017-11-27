@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="63px" height="34px" viewBox="0 0 63 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ANPR</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ANPR">
+            <rect id="Rectangle" stroke="#FFFFFF" stroke-width="2" x="1" y="1" width="61" height="32" rx="6"></rect>
+            <text id="123-AB" font-family="ArialNarrow, Arial Narrow" font-size="15" font-weight="normal" fill="#FFFFFF">
+                <tspan x="17" y="22">123-AB</tspan>
+            </text>
+            <path d="M7,3 L15,3 L15,31 L7,31 L7,31 C4.790861,31 3,29.209139 3,27 L3,7 L3,7 C3,4.790861 4.790861,3 7,3 Z" id="Rectangle-2" fill="#FFFFFF"></path>
+            <text id="NL" font-family="ArialNarrow, Arial Narrow" font-size="6" font-weight="normal" fill="#00477F">
+                <tspan x="6" y="20">NL</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

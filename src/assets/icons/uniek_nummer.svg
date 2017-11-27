@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="62px" viewBox="0 0 57 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>uniek_nummer</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="uniek_nummer" transform="translate(0.000000, -6.000000)" fill="#FFFFFF">
+            <path d="M27,30.5111873 L27,27.078776 L8,21.2220052 L8,33.4190966 L27,30.5111873 Z M27,36.8403947 L27,68.0143229 L8,61.1035156 L8,36.9143503 L25.1429036,43.0517578 L27,36.8403947 Z" id="Combined-Shape"></path>
+            <path d="M48,33.5235952 L48,21 L29,26.8567708 L29,27.6182337 L48,33.5235952 Z M48,38.6949667 L48,60.8815104 L29,67.7923177 L29,34.4562847 L31.7583008,43.7636719 L48,38.6949667 Z" id="Combined-Shape"></path>
+            <polygon id="Rectangle-7" points="8.34375 21.2018229 28.5755208 27.3509115 23.858724 40.1608073 2.91341146 32.7109375"></polygon>
+            <polygon id="Rectangle-8" points="29 27.5325521 48.9908854 21.358724 54.3626302 34.3554688 33.3020833 40.8066406"></polygon>
+            <polygon id="Rectangle-8-Copy" points="0.787760417 12.6438802 21.2356771 6.54427083 29.1757812 16.5989583 8.40820313 21.6451823"></polygon>
+            <polygon id="Rectangle-8-Copy-2" transform="translate(42.735840, 14.823079) rotate(-135.000000) translate(-42.735840, -14.823079) " points="32.9571884 13.3692753 51.559713 3.64793808 52.5144913 16.0655802 33.9170306 25.9982208"></polygon>
+        </g>
+    </g>
+</svg>

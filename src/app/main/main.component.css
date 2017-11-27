@@ -1,0 +1,59 @@
+.block_wrapper {
+  font-size: 0;
+}
+
+.block {
+  display: inline-block;
+  width: 50%;
+  height: 148px;
+  padding: 100px 20px 0;
+  font-size: 1rem;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #052842;
+  border-left: 2px solid #052842;
+  background: #023867 no-repeat center 20px;
+  text-decoration: none;
+}
+
+.block:active {
+  background-color: #236AA4;
+}
+
+.block--person {
+  background-image: url('/assets/icons/persoon.svg');
+}
+
+.block--vehicle {
+  background-image: url('/assets/icons/vervoermiddel.svg');
+}
+
+.block--location {
+  background-image: url('/assets/icons/locatie.svg');
+}
+
+.block--number {
+  background-image: url('/assets/icons/uniek_nummer.svg');
+}
+
+.block--media {
+  background-image: url('/assets/icons/multimedia.svg');
+}
+
+.block--work {
+  background-image: url('/assets/icons/afhandelen.svg');
+}
+
+.block--history {
+  background-image: url('/assets/icons/reload.svg');
+}
+
+.block--anpr {
+  background-image: url('/assets/icons/anpr.svg');
+}
+
+.block--empty {
+  background: #052842;
+}

@@ -1,0 +1,43 @@
+.main {
+  background-color: #052842;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header_navigation {
+  background: #002746;
+  height: 50px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: Arial;
+  line-height: 50px;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.header_navigation .hamburger {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: -3px;
+}
+
+.header_navigation .hamburger div {
+  display: block;
+  height: 2px;
+  width: 16px;
+  background: #fff;
+  margin-bottom: 3px;
+}
+
+.header_navigation .title {
+  display: inline-block;
+}
+
+.header_navigation .title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header_navigation .title img {
+  margin: 0 10px;
+}

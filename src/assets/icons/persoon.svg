@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="61px" viewBox="0 0 54 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>persoon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="persoon" fill="#FFFFFF">
+            <g id="Group-2" transform="translate(0.000000, 28.000000)">
+                <path d="M12.9586466,0.423076923 L6.48214286,0.423076923 L6.48214286,0.423076923 C3.16843436,0.423076923 0.482142857,3.10936842 0.482142857,6.42307692 L0.482142857,6.42307692 L0.482142857,28.5769231 C0.482142857,30.7860621 2.27300386,32.5769231 4.48214286,32.5769231 L25.8157895,32.5769231 L12.9586466,0.423076923 Z M41.0413534,0.423076923 L47.5178571,0.423076923 C50.8315656,0.423076923 53.5178571,3.10936842 53.5178571,6.42307692 L53.5178571,28.5769231 C53.5178571,30.7860621 51.7269961,32.5769231 49.5178571,32.5769231 L28.1842105,32.5769231 L41.0413534,0.423076923 Z" id="Combined-Shape"></path>
+                <polygon id="Triangle-2" points="26.9824059 24.7065738 20.1992481 7.88605772 26.9824059 1.69285359 33.7655636 7.88605772"></polygon>
+            </g>
+            <circle id="Oval" cx="27.5" cy="13.5" r="13.5"></circle>
+        </g>
+    </g>
+</svg>
