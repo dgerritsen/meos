@@ -11,7 +11,6 @@ export class VnavItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.type);
   }
 
 }
