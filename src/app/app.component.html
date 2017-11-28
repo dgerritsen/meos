@@ -10,8 +10,8 @@
       </div>
       <div class="title">
         <a *ngIf="currentUrl == ''">Meos</a>
-        <a *ngIf="currentUrl != ''" routerLink="/"><img src="/assets/icons/house.svg"></a>
-        <a *ngIf="currentUrl != ''" routerLink="/">{{ title }}</a>
+        <a *ngIf="currentUrl != ''" routerLink="/"><i class="material-icons">home</i></a>
+        <a *ngIf="currentUrl != ''">{{ title }}</a>
       </div>
     </nav>
   </header>

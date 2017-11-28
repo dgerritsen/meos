@@ -1,5 +1,3 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
 .main {
   background-color: #052842;
   height: 100vh;
@@ -40,6 +38,8 @@
   text-decoration: none;
 }
 
-.header_navigation .title img {
+.header_navigation .title i {
   margin: 0 10px;
+  font-size: 20px;
+  vertical-align: sub;
 }

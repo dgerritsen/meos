@@ -13,7 +13,7 @@ import {TitleService} from './title.service';
   providers: [TitleService],
 })
 export class AppComponent implements OnInit {
-  title = 'app works, or does it?';
+  title = '';
   menu = false;
   currentUrl = '/';
 
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
       // .mergeMap((route) => route.routeConfig)
       .subscribe((event) => { this.titleService.setTitle(event.routeConfig.data['title']); this.currentUrl = event.routeConfig.path; });
 
-    this.titleService.getTitle().subscribe((title) => this.title = title);
+    this.titleService.getTitle().subscribe((title) => this.title = String('test'));
   }
 
 

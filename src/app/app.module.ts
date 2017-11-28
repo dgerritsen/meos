@@ -12,6 +12,8 @@ import { VnavComponent } from './vnav/vnav.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import {VnavItemComponent} from 'app/vnav/vnav-item.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { VehicleSearchComponent } from './vehicle-search/vehicle-search.component';
+// import {MatTabsModule} from "@angular/material";
 
 @NgModule({
   declarations: [
@@ -22,12 +24,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     VnavComponent,
     VnavItemComponent,
     VehicleComponent,
+    VehicleSearchComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpModule,
+    // MatTabsModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -48,6 +52,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
         component: VehicleComponent,
         data: {
           title: 'Vervoermiddel'
+        }
+      },
+      {
+        path: 'vehicle-search',
+        component: VehicleSearchComponent,
+        data: {
+          title: 'Kenteken'
         }
       }
     ]),

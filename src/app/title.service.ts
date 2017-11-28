@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import {Subject} from 'rxjs/Subject';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class TitleService {
-  title = new Subject();
+  title = new Subject<string>();
 
   constructor() { }
 
