@@ -3,7 +3,7 @@
   width: 100%;
   background: #023867;
   border-bottom: 1px solid #042641;
-  padding: 20px 40px;
+  padding: 25px 45px;
   color: #fff;
 }
 
@@ -54,6 +54,6 @@
 ::ng-deep .vnav-item img {
   vertical-align: middle;
   margin-right: 20px;
-  height: 40px;
-  width: 35px;
+  height: 45px;
+  width: 45px;
 }
