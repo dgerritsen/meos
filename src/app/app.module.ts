@@ -10,7 +10,8 @@ import { PersonComponent } from './person/person.component';
 import { MainComponent } from './main/main.component';
 import { VnavComponent } from './vnav/vnav.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
-import {VnavItemComponent} from "app/vnav/vnav-item.component";
+import {VnavItemComponent} from 'app/vnav/vnav-item.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {VnavItemComponent} from "app/vnav/vnav-item.component";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
@@ -48,7 +50,7 @@ import {VnavItemComponent} from "app/vnav/vnav-item.component";
           title: 'Vervoermiddel'
         }
       }
-    ])
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,5 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 .main {
   background-color: #052842;
   height: 100vh;
