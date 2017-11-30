@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
@@ -11,9 +11,13 @@ import { MainComponent } from './main/main.component';
 import { VnavComponent } from './vnav/vnav.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import {VnavItemComponent} from 'app/vnav/vnav-item.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VehicleSearchComponent } from './vehicle-search/vehicle-search.component';
-// import {MatTabsModule} from "@angular/material";
+import {
+  ErrorStateMatcher, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatOptionModule,
+  MatSelectModule,
+  MatTabsModule, MatToolbarModule, ShowOnDirtyErrorStateMatcher
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -30,8 +34,16 @@ import { VehicleSearchComponent } from './vehicle-search/vehicle-search.componen
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
-    // MatTabsModule,
+    MatCheckboxModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatOptionModule,
+    MatSelectModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -63,7 +75,9 @@ import { VehicleSearchComponent } from './vehicle-search/vehicle-search.componen
       }
     ]),
   ],
-  providers: [],
+  providers: [
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

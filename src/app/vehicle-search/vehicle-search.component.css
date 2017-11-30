@@ -1,0 +1,11 @@
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  height: 85vh;
+}
+
+.container .full-width {
+  width: 100%;
+}

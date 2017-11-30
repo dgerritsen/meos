@@ -1,0 +1,96 @@
+<mat-tab-group>
+  <mat-tab label="Kenteken">
+    <div class="container">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Kenteken" required autofocus [formControl]="plateFormControl" [errorStateMatcher]="platematcher">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Land" name="country" required [formControl]="countryFormControl" [errorStateMatcher]="countrymatcher">
+        <mat-icon *ngIf="countryFormControl.value != ''" matSuffix (click)="countryFormControl.setValue('')">close</mat-icon>
+      </mat-form-field>
+
+      <label class="custom-label" for="mat-input-2">Peildatum/tijd</label>
+      <table class="" cellspacing="0"><tr>
+        <td>
+          <mat-form-field style="width:40px;">
+            <input matInput placeholder="DD">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field style="width:40px;">
+            <input matInput placeholder="MM">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field style="width:80px;">
+            <input matInput placeholder="JJJJ">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field style="width:40px;">
+            <input matInput placeholder="HH">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field style="width:40px;">
+            <input matInput placeholder="MM">
+          </mat-form-field>
+        </td>
+      </tr></table>
+
+    </div>
+  </mat-tab>
+
+
+  <mat-tab label="Voertuig">
+    <div class="container">
+      <mat-form-field>
+        <input matInput placeholder="Voertuigsoort" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Trefwoord" disabled>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="EIGEN INVOER" disabled>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Kenteken/Registratienummer">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Land">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Duplicaatcode">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="VINNummer">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Framenummer">
+      </mat-form-field>
+
+      <mat-checkbox>Merk bekend</mat-checkbox>
+
+      <mat-form-field>
+        <input matInput placeholder="Kleur">
+      </mat-form-field>
+
+      <mat-form-field>
+        <textarea matInput placeholder="Omschrijving"></textarea>
+      </mat-form-field>
+    </div>
+  </mat-tab>
+
+
+  <mat-tab label="IB">
+    <p style="text-align: center;">Geen bevraging uitgevoerd!</p>
+  </mat-tab>
+</mat-tab-group>

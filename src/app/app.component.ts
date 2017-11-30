@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
       // .mergeMap((route) => route.routeConfig)
       .subscribe((event) => { this.titleService.setTitle(event.routeConfig.data['title']); this.currentUrl = event.routeConfig.path; });
 
-    this.titleService.getTitle().subscribe((title) => this.title = String('test'));
+    this.titleService.getTitle().subscribe((title) => this.title = title);
   }
 
 

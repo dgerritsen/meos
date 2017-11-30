@@ -1,6 +1,17 @@
 {
   "name": "MEOS2",
-  "start_url": "/index.html",
+  "short_name": "MEOS2",
+  "lang": "nl",
+  "start_url": "/",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "theme_color": "#023867",
+  "icons": [
+    {
+      "src": "/assets/loading.png",
+      "sizes": "360x640",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#023867"
 }
