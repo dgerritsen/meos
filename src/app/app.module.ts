@@ -18,6 +18,8 @@ import {
   MatSelectModule,
   MatTabsModule, MatToolbarModule, ShowOnDirtyErrorStateMatcher
 } from '@angular/material';
+import { PersonNaturalComponent } from './person-natural/person-natural.component';
+import { AdministrateComponent } from './administrate/administrate.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import {
     VnavItemComponent,
     VehicleComponent,
     VehicleSearchComponent,
+    PersonNaturalComponent,
+    AdministrateComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +64,13 @@ import {
         }
       },
       {
+        path: 'person-natural',
+        component: PersonNaturalComponent,
+        data: {
+          title: 'Persoon'
+        }
+      },
+      {
         path: 'vehicle',
         component: VehicleComponent,
         data: {
@@ -71,6 +82,13 @@ import {
         component: VehicleSearchComponent,
         data: {
           title: 'Kenteken'
+        }
+      },
+      {
+        path: 'administrate',
+        component: AdministrateComponent,
+        data: {
+          title: 'Afhandelen'
         }
       }
     ]),

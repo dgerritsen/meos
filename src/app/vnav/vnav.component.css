@@ -1,9 +1,14 @@
+.container {
+  overflow: auto;
+  height: 92vh;
+}
+
 .vnav-item {
   position: relative;
   width: 100%;
   background: #023867;
   border-bottom: 1px solid #042641;
-  padding: 25px 45px;
+  padding: 21px 45px;
   color: #fff;
 }
 
