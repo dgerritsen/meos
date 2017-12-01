@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="69px" viewBox="0 0 65 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 43 0 43 9.61914062 39.6274414 41.2675781 39.6274414 61 0 61"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="afhandelen" transform="translate(-19.000000, -12.000000)">
+            <g id="Group" transform="translate(14.000000, 11.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Rectangle-2"></g>
+                <image id="Bitmap" mask="url(#mask-2)" x="6" y="2" width="45" height="54" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAA2CAYAAABTCxDCAAAAAXNSR0IArs4c6QAAAehJREFUaAXtWrFKA1EQvIuVrdgErAVBOBAsBAsLCws/wsLGxsLGxsbKxkZQkDR2+hv5Bf9BEkRUFEUbOWcDgWTu3SW7XO6l2AdDsrszbydDisAlSQwnz/MD4A9o6vSw6B5YEbup1jOEh9B0LFrtrgD/Db1sITAobcHwEYa3gPrDll6qGyyC3p7aNAwfQ3ANxDI8/HjLwzeVrzB8AvD5RWO/UljTkBdPvBaCUxah/gH2JoprIvD+ymtBPmMB6m9gt1JY85A9lF4P4jmTUX8BO6WiGQ3YR3ANSBdMRP0JbAcFM26yl8I6EC6ZhPoD2CqQG2qwn7G1GF4xAfU7sDlGbLhgT4P1aKbADQ9RvwIbDXssrGNfCRpiuMMD1C9AVrghQoO9iek7bqJ+BtYj+AuuZH9imo/8oloLqiM12WDI9Gokb6Vr2bR8n/NRdoozWs/De/bYmgdTWg9uWpuYle9JW5PT6jxpbWJWvidtTU6r86S1iVn5nrQ1Oa3Ok9YmZuV70tbktDpPWpuYle9JW5PT6jxpbWJWvidtTU6r86S1iVn5nrQ1Oa3Ok9YmZuV70tbktDp5EtCDqK0VRuT35evRjWjAsrorScv/gh6BJcsNDWsGfwdq4bnQExbLQ84HoN+wiWnXiS/xl4nff/6rmWs6I3JMAAAAAElFTkSuQmCC"></image>
+            </g>
+            <polygon id="Rectangle-17" fill-rule="nonzero" points="57 11 71 11 71 69 61.28125 69 57 60.9291992"></polygon>
+            <rect id="Rectangle-11" fill="#FFFFFF" fill-rule="nonzero" x="28" y="54" width="27" height="4" rx="2"></rect>
+            <rect id="Rectangle-11-Copy" fill="#FFFFFF" fill-rule="nonzero" x="28" y="44" width="27" height="4" rx="2"></rect>
+            <rect id="Rectangle-11-Copy-2" fill="#FFFFFF" fill-rule="nonzero" x="28" y="34" width="27" height="4" rx="2"></rect>
+            <rect id="Rectangle-11-Copy-3" fill="#FFFFFF" fill-rule="nonzero" x="39" y="24" width="16" height="4" rx="2"></rect>
+            <polygon id="Rectangle-12" fill="#FFFFFF" fill-rule="nonzero" points="28.4328613 21.6806641 37 13.3613281 37 30 19.8657227 30"></polygon>
+            <rect id="Rectangle-13" fill="#FFFFFF" fill-rule="nonzero" x="59" y="12" width="14" height="11" rx="2"></rect>
+            <rect id="Rectangle-16" fill="#FFFFFF" fill-rule="nonzero" x="74" y="14" width="4" height="23" rx="2"></rect>
+            <path d="M72,40.0026787 L72,25.5 C72,24.6715729 71.3284271,24 70.5,24 L70.5,24 L70.5,24 C69.6715729,24 69,24.6715729 69,25.5 L69,25.5 L69,40.956805 C69.9629055,40.5767144 70.9629055,40.2586723 72,40.0026787 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M68,41.3798701 L68,26 C68,24.8954305 67.1045695,24 66,24 L66,24 L65,24 L65,24 C63.8954305,24 63,24.8954305 63,26 L63,26 L63,44.51779 C64.5290919,43.2416932 66.1957586,42.1957199 68,41.3798701 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <path d="M62,45.4035402 L62,25.5 C62,24.6715729 61.3284271,24 60.5,24 L60.5,24 L60.5,24 C59.6715729,24 59,24.6715729 59,25.5 L59,25.5 L59,48.7974375 C59.9264076,47.5430392 60.9264076,46.4117401 62,45.4035402 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+        <path d="M64.2949219,31.6914062 L62.796875,38.7246094 C61.3580657,37.2858001 59.2591284,36.5664062 56.5,36.5664062 C53.7408716,36.5664062 51.506519,37.5566307 49.796875,39.5371094 C48.8320264,40.6543025 48.1464864,42.0507729 47.7402344,43.7265625 L61.7050781,43.7265625 L60.8925781,47.6621094 L47.2324219,47.6621094 C47.2154947,48.0514342 47.2070312,48.5507782 47.2070312,49.1601562 C47.2070312,49.7526071 47.2239582,50.3704395 47.2578125,51.0136719 L60.1816406,51.0136719 L59.3691406,54.9492188 L47.7910156,54.9492188 C48.2141948,56.7604257 48.865881,58.1822865 49.7460938,59.2148438 C51.4388105,61.2122496 53.6393094,62.2109375 56.3476562,62.2109375 C59.5976725,62.2109375 62.1874904,61.2122496 64.1171875,59.2148438 L64.1171875,66.984375 C61.9166557,68.0846409 59.3522282,68.6347656 56.4238281,68.6347656 C51.4810951,68.6347656 47.4186357,66.9420742 44.2363281,63.5566406 C42.0696506,61.2545458 40.6393264,58.3854338 39.9453125,54.9492188 L36.1875,54.9492188 L37,51.0136719 L39.4882812,51.0136719 C39.4713541,50.6074198 39.4628906,50.1757835 39.4628906,49.71875 C39.4628906,48.9401003 39.4798175,48.2545603 39.5136719,47.6621094 L36.1875,47.6621094 L37,43.7265625 L40.0214844,43.7265625 C40.7324254,40.3580561 42.1458228,37.5397249 44.2617188,35.2714844 C47.4609535,31.8521964 51.6672916,30.1425781 56.8808594,30.1425781 C59.7246236,30.1425781 62.195953,30.658849 64.2949219,31.6914062 Z" id="€" fill="#FFFFFF"></path>
+    </g>
+</svg>
