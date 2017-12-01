@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="59px" height="59px" viewBox="0 0 59 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="59px" height="58px" viewBox="0 0 59 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
     <title>afhandelen</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <polygon id="path-1" points="0 0 43 0 43 9.61914062 43 43.8043691 50.8441418 61 0 61"></polygon>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="afhandelen">
-            <path d="M15.9627437,4 L42,4 C43.1045695,4 44,4.8954305 44,6 L44,52 C44,53.1045695 43.1045695,54 42,54 L5,54 C3.8954305,54 3,53.1045695 3,52 L3,16.7010225 L15.9627437,4 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="4"></path>
-            <polygon id="Rectangle-17" fill="#023867" fill-rule="nonzero" points="38 0 52 0 52 58 42.28125 58 38 49.9291992"></polygon>
-            <rect id="Rectangle-11" fill="#FFFFFF" fill-rule="nonzero" x="9" y="43" width="27" height="4" rx="2"></rect>
-            <rect id="Rectangle-11-Copy" fill="#FFFFFF" fill-rule="nonzero" x="9" y="33" width="27" height="4" rx="2"></rect>
-            <rect id="Rectangle-11-Copy-2" fill="#FFFFFF" fill-rule="nonzero" x="9" y="23" width="27" height="4" rx="2"></rect>
-            <rect id="Rectangle-11-Copy-3" fill="#FFFFFF" fill-rule="nonzero" x="20" y="13" width="16" height="4" rx="2"></rect>
-            <polygon id="Rectangle-12" fill="#FFFFFF" fill-rule="nonzero" points="9.43286133 10.6806641 18 2.36132812 18 19 0.865722656 19"></polygon>
-            <rect id="Rectangle-13" fill="#FFFFFF" fill-rule="nonzero" x="40" y="1" width="14" height="11" rx="2"></rect>
-            <rect id="Rectangle-16" fill="#FFFFFF" fill-rule="nonzero" x="55" y="3" width="4" height="23" rx="2"></rect>
-            <rect id="Rectangle-14" fill="#FFFFFF" fill-rule="nonzero" x="50" y="13" width="3" height="30" rx="1.5"></rect>
-            <rect id="Rectangle-14-Copy" fill="#FFFFFF" fill-rule="nonzero" x="44" y="13" width="5" height="30" rx="2"></rect>
-            <rect id="Rectangle-14-Copy-2" fill="#FFFFFF" fill-rule="nonzero" x="40" y="13" width="3" height="30" rx="1.5"></rect>
-            <polygon id="Rectangle-15" fill="#FFFFFF" fill-rule="nonzero" points="40 44 53 44 50.4831543 51 43.3438546 51"></polygon>
-            <polygon id="Triangle-3" fill="#FFFFFF" fill-rule="nonzero" points="47 59 44 53 50 53"></polygon>
+        <g id="digibon" transform="translate(-5.000000, -1.000000)">
+            <g id="afhandelen">
+                <g id="Group">
+                    <g id="Bitmap-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="path-1"></g>
+                        <image id="Bitmap" mask="url(#mask-2)" x="6" y="2" width="45" height="54" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAA2CAYAAABTCxDCAAAAAXNSR0IArs4c6QAAAehJREFUaAXtWrFKA1EQvIuVrdgErAVBOBAsBAsLCws/wsLGxsLGxsbKxkZQkDR2+hv5Bf9BEkRUFEUbOWcDgWTu3SW7XO6l2AdDsrszbydDisAlSQwnz/MD4A9o6vSw6B5YEbup1jOEh9B0LFrtrgD/Db1sITAobcHwEYa3gPrDll6qGyyC3p7aNAwfQ3ANxDI8/HjLwzeVrzB8AvD5RWO/UljTkBdPvBaCUxah/gH2JoprIvD+ymtBPmMB6m9gt1JY85A9lF4P4jmTUX8BO6WiGQ3YR3ANSBdMRP0JbAcFM26yl8I6EC6ZhPoD2CqQG2qwn7G1GF4xAfU7sDlGbLhgT4P1aKbADQ9RvwIbDXssrGNfCRpiuMMD1C9AVrghQoO9iek7bqJ+BtYj+AuuZH9imo/8oloLqiM12WDI9Gokb6Vr2bR8n/NRdoozWs/De/bYmgdTWg9uWpuYle9JW5PT6jxpbWJWvidtTU6r86S1iVn5nrQ1Oa3Ok9YmZuV70tbktDpPWpuYle9JW5PT6jxpbWJWvidtTU6r86S1iVn5nrQ1Oa3Ok9YmZuV70tbktDp5EtCDqK0VRuT35evRjWjAsrorScv/gh6BJcsNDWsGfwdq4bnQExbLQ84HoN+wiWnXiS/xl4nff/6rmWs6I3JMAAAAAElFTkSuQmCC"></image>
+                    </g>
+                </g>
+                <polygon id="Rectangle-17" points="43 0 57 0 57 58 47.28125 58 43 49.9291992"></polygon>
+                <rect id="Rectangle-11" fill="#FFFFFF" fill-rule="nonzero" x="14" y="43" width="27" height="4" rx="2"></rect>
+                <rect id="Rectangle-11-Copy" fill="#FFFFFF" fill-rule="nonzero" x="14" y="33" width="27" height="4" rx="2"></rect>
+                <rect id="Rectangle-11-Copy-2" fill="#FFFFFF" fill-rule="nonzero" x="14" y="23" width="27" height="4" rx="2"></rect>
+                <rect id="Rectangle-11-Copy-3" fill="#FFFFFF" fill-rule="nonzero" x="25" y="13" width="16" height="4" rx="2"></rect>
+                <polygon id="Rectangle-12" fill="#FFFFFF" fill-rule="nonzero" points="14.4328613 10.6806641 23 2.3613281 23 19 5.8657227 19"></polygon>
+                <rect id="Rectangle-13" fill="#FFFFFF" fill-rule="nonzero" x="45" y="1" width="14" height="11" rx="2"></rect>
+                <rect id="Rectangle-16" fill="#FFFFFF" fill-rule="nonzero" x="60" y="3" width="4" height="23" rx="2"></rect>
+                <rect id="Rectangle-14" fill="#FFFFFF" fill-rule="nonzero" x="55" y="13" width="3" height="30" rx="1.5"></rect>
+                <rect id="Rectangle-14-Copy" fill="#FFFFFF" fill-rule="nonzero" x="49" y="13" width="5" height="30" rx="2"></rect>
+                <rect id="Rectangle-14-Copy-2" fill="#FFFFFF" fill-rule="nonzero" x="45" y="13" width="3" height="30" rx="1.5"></rect>
+                <polygon id="Rectangle-15" fill="#FFFFFF" fill-rule="nonzero" points="45 44 58 44 55.4831543 51 48.3438546 51"></polygon>
+                <polygon id="Triangle-3" fill="#FFFFFF" fill-rule="nonzero" points="52 59 49 53 55 53"></polygon>
+            </g>
         </g>
     </g>
 </svg>
