@@ -2,7 +2,7 @@
   <mat-tab label="Kenteken">
     <div class="container">
       <mat-form-field class="full-width">
-        <input matInput placeholder="Kenteken" required autofocus [formControl]="plateFormControl" [errorStateMatcher]="platematcher">
+        <input matInput placeholder="Kenteken" #autofocus required autofocus [formControl]="plateFormControl" [errorStateMatcher]="platematcher">
       </mat-form-field>
 
       <mat-form-field>
@@ -92,3 +92,7 @@
     <p style="text-align: center;">Geen bevraging uitgevoerd!</p>
   </mat-tab>
 </mat-tab-group>
+
+<script>
+  document.getElementsByName('license')[0].focus();
+</script>

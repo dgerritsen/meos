@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ErrorStateMatcher, MatInputModule, MatOptionModule } from '@angular/material';
@@ -19,7 +19,9 @@ export class InputErrorStateMatcher implements ErrorStateMatcher {
   templateUrl: './vehicle-search.component.html',
   styleUrls: ['./vehicle-search.component.css']
 })
-export class VehicleSearchComponent implements OnInit {
+export class VehicleSearchComponent implements OnInit, AfterViewInit {
+
+  @ViewChild('autofocus') private elementRef: ElementRef;
 
   allVehicles;
 
@@ -39,7 +41,8 @@ export class VehicleSearchComponent implements OnInit {
     private matFormField: MatFormFieldModule,
     private matInput: MatInputModule,
     private matOption: MatOptionModule,
-    private restangular: Restangular
+    private restangular: Restangular,
+    private cd: ChangeDetectorRef
   ) { }
 
 
@@ -47,7 +50,12 @@ export class VehicleSearchComponent implements OnInit {
     const vehicles = this.restangular.all('vehicles');
     vehicles.getList().subscribe(v => {
       this.allVehicles = v;
-    })
+    });
+  }
+
+  ngAfterViewInit() {
+    this.elementRef.nativeElement.focus();
+    this.cd.detectChanges();
   }
 
 }
