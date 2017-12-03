@@ -26,7 +26,7 @@ export class PersonComponent implements OnInit {
   }
 
   OpenSnackbar() {
-    this.snackbar.open('Dit onderdeel komt binnenkort!', '', { duration: 2000 });
+    this.snackbar.open('Niet beschikbaar in oefenmodus', '', { duration: 2000 });
   }
 
 }
