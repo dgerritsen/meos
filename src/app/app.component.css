@@ -6,11 +6,11 @@
 }
 
 .header_navigation {
-  background: #002746;
+  background: #006BE8;
   height: 50px;
   width: 100%;
   font-size: 1.2rem;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   line-height: 50px;
   color: #fff;
   padding: 0 20px;
