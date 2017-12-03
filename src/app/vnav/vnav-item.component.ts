@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {MatSnackBarModule} from '@angular/material';
 
 @Component({
   selector: 'app-vnav-item',
@@ -8,9 +9,8 @@ import {Component, Input, OnInit} from '@angular/core';
 export class VnavItemComponent implements OnInit {
   @Input() disabled = false;
   @Input() type = '';
-  constructor() { }
+  constructor(public snackbar: MatSnackBarModule) { }
 
   ngOnInit() {
   }
-
 }

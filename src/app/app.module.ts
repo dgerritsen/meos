@@ -15,7 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VehicleSearchComponent } from './vehicle-search/vehicle-search.component';
 import {
   ErrorStateMatcher, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatOptionModule,
-  MatSelectModule,
+  MatSelectModule, MatSnackBarModule,
   MatTabsModule, MatToolbarModule, ShowOnDirtyErrorStateMatcher
 } from '@angular/material';
 import { PersonNaturalComponent } from './person-natural/person-natural.component';
@@ -55,6 +55,7 @@ export function RestangularConfigFactory (RestangularProvider) {
     MatIconModule,
     MatOptionModule,
     MatSelectModule,
+    MatSnackBarModule,
     RestangularModule.forRoot(RestangularConfigFactory),
     RouterModule.forRoot([
       {
