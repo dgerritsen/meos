@@ -3,6 +3,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ErrorStateMatcher, MatInputModule, MatOptionModule } from '@angular/material';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
+import { Restangular } from 'ngx-restangular';
 
 /** Error when invalid control is dirty, touched, or submitted. */
 export class InputErrorStateMatcher implements ErrorStateMatcher {
@@ -20,6 +21,8 @@ export class InputErrorStateMatcher implements ErrorStateMatcher {
 })
 export class VehicleSearchComponent implements OnInit {
 
+  allVehicles;
+
   plateFormControl = new FormControl('', [
     Validators.required,
   ]);
@@ -35,12 +38,16 @@ export class VehicleSearchComponent implements OnInit {
     private matTabs: MatTabsModule,
     private matFormField: MatFormFieldModule,
     private matInput: MatInputModule,
-    private matOption: MatOptionModule
+    private matOption: MatOptionModule,
+    private restangular: Restangular
   ) { }
 
 
   ngOnInit() {
-    // this.countryFormControl.get('country').setValue('Nederland');
+    const vehicles = this.restangular.all('vehicles');
+    vehicles.getList().subscribe(v => {
+      this.allVehicles = v;
+    })
   }
 
 }

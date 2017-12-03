@@ -21,6 +21,13 @@ import {
 import { PersonNaturalComponent } from './person-natural/person-natural.component';
 import { AdministrateComponent } from './administrate/administrate.component';
 
+import { RestangularModule, Restangular } from 'ngx-restangular';
+
+export function RestangularConfigFactory (RestangularProvider) {
+  RestangularProvider.setBaseUrl('http://meospapi.herokuapp.com/');
+  RestangularProvider.setDefaultHeaders({'Authorization': 'Token 4dcfe376abef0197a3c071bf4b7eb85c42f5594e'});
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +55,7 @@ import { AdministrateComponent } from './administrate/administrate.component';
     MatIconModule,
     MatOptionModule,
     MatSelectModule,
+    RestangularModule.forRoot(RestangularConfigFactory),
     RouterModule.forRoot([
       {
         path: '',
