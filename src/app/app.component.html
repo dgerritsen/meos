@@ -13,6 +13,7 @@
         <a *ngIf="currentUrl != ''" routerLink="/"><i class="material-icons">home</i></a>
         <a *ngIf="currentUrl != ''">{{ title }}</a>
       </div>
+      <mat-icon style="position: absolute;right: 20px;top: calc(50% - 12px);">{{ headerActionIcon }}</mat-icon>
     </nav>
   </header>
   <router-outlet></router-outlet>

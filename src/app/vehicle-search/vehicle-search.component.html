@@ -1,4 +1,4 @@
-<mat-tab-group>
+<mat-tab-group (selectedTabChange)="tabChanged($event)">
   <mat-tab label="Kenteken">
     <div class="container">
       <mat-form-field class="full-width">

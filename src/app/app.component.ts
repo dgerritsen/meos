@@ -5,24 +5,33 @@ import 'rxjs/add/operator/mergeMap';
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, NavigationEnd, NavigationStart, Router} from '@angular/router';
 import {TitleService} from './title.service';
+import {HeaderactionService} from "./headeraction.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [TitleService],
+  providers: [TitleService, HeaderactionService],
 })
 export class AppComponent implements OnInit {
   title = '';
   menu = false;
   currentUrl = '/';
+  headerActionIcon = '';
 
   constructor(private router: Router,
               private activatedRoute: ActivatedRoute,
-              private titleService: TitleService) {
+              private titleService: TitleService,
+              private headeractionService: HeaderactionService) {
   }
 
   ngOnInit() {
+
+    this.headeractionService.headerActionIcon$.subscribe(icon => {
+      console.log('subscribe called');
+      this.headerActionIcon = icon;
+    });
+
     this.router.events
       .filter((event) => event instanceof NavigationEnd)
       .map(() => this.activatedRoute)

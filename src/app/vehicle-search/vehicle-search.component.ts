@@ -1,9 +1,10 @@
-import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { ErrorStateMatcher, MatInputModule, MatOptionModule } from '@angular/material';
+import {ErrorStateMatcher, MatInputModule, MatOptionModule, MatTabChangeEvent} from '@angular/material';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { Restangular } from 'ngx-restangular';
+import { HeaderactionService } from '../headeraction.service';
 
 /** Error when invalid control is dirty, touched, or submitted. */
 export class InputErrorStateMatcher implements ErrorStateMatcher {
@@ -19,7 +20,7 @@ export class InputErrorStateMatcher implements ErrorStateMatcher {
   templateUrl: './vehicle-search.component.html',
   styleUrls: ['./vehicle-search.component.css']
 })
-export class VehicleSearchComponent implements OnInit, AfterViewInit {
+export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy {
 
   @ViewChild('autofocus') private elementRef: ElementRef;
 
@@ -42,8 +43,23 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit {
     private matInput: MatInputModule,
     private matOption: MatOptionModule,
     private restangular: Restangular,
-    private cd: ChangeDetectorRef
+    private cd: ChangeDetectorRef,
+    private headeractionService: HeaderactionService
   ) { }
+
+  tabChanged = (tabChangeEvent: MatTabChangeEvent): void => {
+    console.log('tabChangeEvent => ', tabChangeEvent);
+    console.log('index => ', tabChangeEvent.index);
+
+    if (tabChangeEvent.index === 0) {
+      this.headeractionService.setHeaderActionIcon('search');
+    } else if (tabChangeEvent.index === 1) {
+      this.headeractionService.setHeaderActionIcon('save');
+    } else {
+      this.headeractionService.setHeaderActionIcon('');
+    }
+
+  };
 
 
   ngOnInit() {
@@ -51,11 +67,17 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit {
     vehicles.getList().subscribe(v => {
       this.allVehicles = v;
     });
+
+    this.headeractionService.setHeaderActionIcon('search');
   }
 
   ngAfterViewInit() {
     this.elementRef.nativeElement.focus();
     this.cd.detectChanges();
+  }
+
+  ngOnDestroy() {
+    this.headeractionService.setHeaderActionIcon('');
   }
 
 }
