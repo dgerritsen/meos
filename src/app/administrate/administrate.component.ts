@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-administrate',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdministrateComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private snackbar: MatSnackBar
+  ) { }
 
   ngOnInit() {
+  }
+
+  showDisabledToast() {
+    this.snackbar.open('Niet beschikbaar in oefenmodus', '', { duration: 2000 });
   }
 
 }

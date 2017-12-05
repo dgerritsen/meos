@@ -46,6 +46,9 @@ export class AppComponent implements OnInit {
     this.titleService.getTitle().subscribe((title) => this.title = title);
   }
 
+  pressActivatedButton() {
+    this.headeractionService.pressButton();
+  }
 
   openMenu(): void {
     this.menu = true;

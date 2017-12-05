@@ -1,9 +1,9 @@
 <mat-tab-group>
   <mat-tab label="Nieuw">
     <app-vnav>
-      <app-vnav-item [disabled]="true" [type]="'manual'"><img src="/assets/icons/digibon.svg" />Digibon</app-vnav-item>
-      <app-vnav-item [disabled]="true" [type]="'manual'"><img src="/assets/icons/email.svg" />Email</app-vnav-item>
-      <app-vnav-item [disabled]="true" [type]="'manual'"><img src="/assets/icons/afhandelen.svg" />Mutatie</app-vnav-item>
+      <app-vnav-item [type]="'manual'"><img src="/assets/icons/digibon.svg" />Digibon</app-vnav-item>
+      <app-vnav-item [disabled]="true" [type]="'manual'" (click)="showDisabledToast()"><img src="/assets/icons/email.svg" />Email</app-vnav-item>
+      <app-vnav-item [type]="'manual'"><img src="/assets/icons/afhandelen.svg" />Mutatie</app-vnav-item>
     </app-vnav>
   </mat-tab>
 

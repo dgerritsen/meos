@@ -25,6 +25,8 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy 
   @ViewChild('autofocus') private elementRef: ElementRef;
 
   allVehicles;
+  sub;
+  selectedTab = 0;
 
   plateFormControl = new FormControl('', [
     Validators.required,
@@ -53,10 +55,13 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy 
 
     if (tabChangeEvent.index === 0) {
       this.headeractionService.setHeaderActionIcon('search');
+      this.selectedTab = 0;
     } else if (tabChangeEvent.index === 1) {
       this.headeractionService.setHeaderActionIcon('save');
+      this.selectedTab = 1;
     } else {
       this.headeractionService.setHeaderActionIcon('');
+      this.selectedTab = 2;
     }
 
   };
@@ -69,6 +74,12 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy 
     });
 
     this.headeractionService.setHeaderActionIcon('search');
+
+    this.sub = this.headeractionService.buttonPressed$.subscribe(pressed => {
+      console.log('button pressed', pressed);
+      console.log('search: ', this.plateFormControl.value);
+      this.selectedTab = 2;
+    });
   }
 
   ngAfterViewInit() {
@@ -78,6 +89,8 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy 
 
   ngOnDestroy() {
     this.headeractionService.setHeaderActionIcon('');
+    this.sub.unsubscribe();
   }
+
 
 }
