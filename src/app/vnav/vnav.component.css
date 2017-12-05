@@ -1,6 +1,7 @@
 .container {
   overflow: auto;
   height: calc(100vh - 50px);
+  touch-action: pan-down;
 }
 
 .vnav-item {
