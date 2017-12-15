@@ -29,14 +29,14 @@
   font-family: 'Roboto', Arial, sans-serif;
   text-align: center;
   font-weight: bold;
-  border-bottom: 2px solid #0a3250;
+  border-bottom: 2px solid #022542;
   /*border-right: 2px solid #052842;*/
-  background: #023867 no-repeat center 25px;
+  background: #003867 no-repeat center 25px;
   text-decoration: none;
 }
 
 .block:nth-child(2n) {
-  border-left: 2px solid #0a3250;
+  border-left: 2px solid #022542;
 }
 
 .block:active {
@@ -76,5 +76,5 @@
 }
 
 .block--empty {
-  background: #0a3250;
+  background: #022542;
 }

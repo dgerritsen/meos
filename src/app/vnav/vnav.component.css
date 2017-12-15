@@ -7,8 +7,8 @@
 .vnav-item {
   position: relative;
   width: 100%;
-  background: #023867;
-  border-bottom: 1px solid #042641;
+  background: #003867;
+  border-bottom: 1px solid #022542;
   padding: 25px 45px;
   color: #fff;
 }
@@ -28,7 +28,7 @@
 
 .vnav-item.manual:before {
   background-image: url('/assets/icons/pencil.svg');
-  background-color: #EA7100;
+  background-color: #EF6C02;
 }
 
 .vnav-item.reuse:before {
@@ -38,12 +38,12 @@
 
 .vnav-item.scan:before {
   background-image: url('/assets/icons/phone.svg');
-  background-color: #006F00;
+  background-color: #009349;
 }
 
 .vnav-item.search:before {
   background-image: url('/assets/icons/magnifying-glass.svg');
-  background-color: #006BE8;
+  background-color: #0066EC;
 }
 
 .vnav-item.disabled:after {
