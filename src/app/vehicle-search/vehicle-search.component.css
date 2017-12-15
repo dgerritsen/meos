@@ -4,6 +4,11 @@
   flex-direction: column;
   overflow: auto;
   height: 85vh;
+  background-color: #012F55;
+}
+
+.container.nopadding {
+  padding: 0;
 }
 
 .container .full-width {
