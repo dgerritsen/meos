@@ -1,7 +1,10 @@
 import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {ErrorStateMatcher, MatInputModule, MatOptionModule, MatTabChangeEvent} from '@angular/material';
+import {
+  ErrorStateMatcher, MatExpansionModule, MatInputModule, MatOptionModule,
+  MatTabChangeEvent
+} from '@angular/material';
 import { FormControl, FormGroupDirective, NgForm, Validators } from '@angular/forms';
 import { Restangular } from 'ngx-restangular';
 import { HeaderactionService } from '../headeraction.service';
@@ -27,6 +30,8 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy 
   allVehicles;
   sub;
   selectedTab = 0;
+  panelOpenState: boolean = false;
+  MatAccordionDisplayMode
 
   plateFormControl = new FormControl('', [
     Validators.required,
@@ -44,6 +49,7 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy 
     private matFormField: MatFormFieldModule,
     private matInput: MatInputModule,
     private matOption: MatOptionModule,
+    private matExpansion: MatExpansionModule,
     private restangular: Restangular,
     private cd: ChangeDetectorRef,
     private headeractionService: HeaderactionService
@@ -68,10 +74,11 @@ export class VehicleSearchComponent implements OnInit, AfterViewInit, OnDestroy 
 
 
   ngOnInit() {
-    const vehicles = this.restangular.all('vehicles');
-    vehicles.getList().subscribe(v => {
-      this.allVehicles = v;
-    });
+    this.allVehicles = this.restangular.all('vehicles').getList();
+    // vehicles.getList().subscribe(v => {
+    //   this.allVehicles = v;
+    //   console.log(v);
+    // });
 
     this.headeractionService.setHeaderActionIcon('search');
 

@@ -89,7 +89,25 @@
 
 
   <mat-tab label="IB">
-    <p style="text-align: center;">Geen bevraging uitgevoerd!</p>
+    <div class="container nopadding">
+      <p *ngIf="allVehicles.length === 0" style="text-align: center;">Geen bevraging uitgevoerd!</p>
+      <div class="vehicle-results" *ngFor="let v of allVehicles | async">
+        <mat-accordion [displayMode]="flat">
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Kenteken   <strong>{{ v.license }}</strong>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <p>{{ v.brand }} {{ v.type }}</p>
+
+          </mat-expansion-panel>
+
+        </mat-accordion>
+      </div>
+    </div>
   </mat-tab>
 </mat-tab-group>
 

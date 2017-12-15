@@ -47,7 +47,7 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
   color: rgba(255,255,255,0.6);
   flex-grow: 1;
   opacity: 1!important;
-  background-color: #002746;
+  background-color: #022542;
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -61,7 +61,7 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 }
 
 .mat-tab-label-active, .mat-tab-group.mat-primary .mat-tab-label:focus, .mat-tab-group.mat-primary .mat-tab-link:focus, .mat-tab-nav-bar.mat-primary .mat-tab-label:focus, .mat-tab-nav-bar.mat-primary .mat-tab-link:focus {
-  background-color: #002746;
+  background-color: #022542;
   color: #fff;
 }
 
@@ -119,4 +119,18 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 p {
   color: #b3c3d1;
+}
+
+
+.mat-expansion-panel-header {
+  background: #003867 !important;
+  height: 45px !important;
+}
+
+.mat-expansion-panel-header-title {
+  color: #fff;
+}
+
+.mat-expansion-panel {
+  background: none;
 }

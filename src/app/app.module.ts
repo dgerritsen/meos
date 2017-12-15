@@ -14,7 +14,8 @@ import {VnavItemComponent} from 'app/vnav/vnav-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VehicleSearchComponent } from './vehicle-search/vehicle-search.component';
 import {
-  ErrorStateMatcher, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatOptionModule,
+  ErrorStateMatcher, MatCheckboxModule, MatExpansionModule, MatFormFieldModule, MatIconModule, MatInputModule,
+  MatOptionModule,
   MatSelectModule, MatSnackBarModule,
   MatTabsModule, MatToolbarModule, ShowOnDirtyErrorStateMatcher
 } from '@angular/material';
@@ -22,6 +23,7 @@ import { PersonNaturalComponent } from './person-natural/person-natural.componen
 import { AdministrateComponent } from './administrate/administrate.component';
 
 import { RestangularModule, Restangular } from 'ngx-restangular';
+import { AnprComponent } from './anpr/anpr.component';
 
 export function RestangularConfigFactory (RestangularProvider) {
   RestangularProvider.setBaseUrl('http://meospapi.herokuapp.com/');
@@ -40,6 +42,7 @@ export function RestangularConfigFactory (RestangularProvider) {
     VehicleSearchComponent,
     PersonNaturalComponent,
     AdministrateComponent,
+    AnprComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,6 +59,7 @@ export function RestangularConfigFactory (RestangularProvider) {
     MatOptionModule,
     MatSelectModule,
     MatSnackBarModule,
+    MatExpansionModule,
     RestangularModule.forRoot(RestangularConfigFactory),
     RouterModule.forRoot([
       {
@@ -98,6 +102,13 @@ export function RestangularConfigFactory (RestangularProvider) {
         component: AdministrateComponent,
         data: {
           title: 'Afhandelen'
+        }
+      },
+      {
+        path: 'anpr',
+        component: AnprComponent,
+        data: {
+          title: 'ANPR'
         }
       }
     ]),
