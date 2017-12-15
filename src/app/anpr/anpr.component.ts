@@ -12,7 +12,7 @@ export class AnprComponent implements OnInit {
   ngOnInit() {
 
     // Grab elements, create settings, etc.
-    const video = document.getElementById('video');
+    const video: HTMLVideoElement = document.getElementById('video');
 
     // Get access to the camera!
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
